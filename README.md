@@ -1,1 +1,27 @@
 # BaekJoonHub
+
+#사이즈별로 필요한 티셔츠 개수 출력하기
+
+def solution(shirt_size):
+  count = [0, 0, 0, 0, 0, 0]
+  for i in shirt_size:
+    if i == "XS":
+      count[0] += 1
+    elif i == "S":
+      count[1] += 1
+    elif i == "M":
+      count[2] += 1
+    elif i == "L":
+      count[3] += 1
+    elif i == "XL":
+      count[4] += 1
+    elif i == "XXL":
+      count[5] += 1
+  return count
+
+shirt_size = ["XS", "S", "L", "L", "XL", "S"]  
+ret = solution(shirt_size);
+
+print("solution 함수의 반환값은", ret, "입니다.")
+    
+
